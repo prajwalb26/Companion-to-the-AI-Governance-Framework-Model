@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="generator" content="PhpSpreadsheet, https://github.com/PHPOffice/PhpSpreadsheet">
+      <meta name="author" content="PRAJWAL BHADANE" />
+    <style type="text/css">
+      html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt; background-color:white }
+      a.comment-indicator:hover + div.comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em }
+      a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em }
+      div.comment { display:none }
+      table { border-collapse:collapse; page-break-after:always }
+      .gridlines td { border:1px dotted black }
+      .gridlines th { border:1px dotted black }
+      .b { text-align:center }
+      .e { text-align:center }
+      .f { text-align:right }
+      .inlineStr { text-align:left }
+      .n { text-align:right }
+      .s { text-align:left }
+      td.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style1 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; text-decoration:underline; color:#000000; font-family:'Algerian'; font-size:16pt; background-color:white }
+      th.style1 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; text-decoration:underline; color:#000000; font-family:'Algerian'; font-size:16pt; background-color:white }
+      td.style2 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calisto MT'; font-size:11pt; background-color:white }
+      th.style2 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calisto MT'; font-size:11pt; background-color:white }
+      td.style3 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calisto MT'; font-size:11pt; background-color:white }
+      th.style3 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calisto MT'; font-size:11pt; background-color:white }
+      td.style4 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; text-decoration:underline; color:#000000; font-family:'Calibri'; font-size:16pt; background-color:white }
+      th.style4 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; text-decoration:underline; color:#000000; font-family:'Calibri'; font-size:16pt; background-color:white }
+      td.style5 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calisto MT'; font-size:11pt; background-color:white }
+      th.style5 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calisto MT'; font-size:11pt; background-color:white }
+      td.style6 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Calisto MT'; font-size:11pt; background-color:white }
+      th.style6 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Calisto MT'; font-size:11pt; background-color:white }
+      td.style7 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; text-decoration:underline; color:#000000; font-family:'Calisto MT'; font-size:16pt; background-color:white }
+      th.style7 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; text-decoration:underline; color:#000000; font-family:'Calisto MT'; font-size:16pt; background-color:white }
+      td.style8 { vertical-align:middle; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calisto MT'; font-size:11pt; background-color:white }
+      th.style8 { vertical-align:middle; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Calisto MT'; font-size:11pt; background-color:white }
+      table.sheet0 col.col0 { width:148.43333163pt }
+      table.sheet0 col.col1 { width:145.72222055pt }
+      table.sheet0 col.col2 { width:145.72222055pt }
+      table.sheet0 col.col3 { width:42pt }
+      table.sheet0 tr { height:15pt }
+      table.sheet0 tr.row0 { height:34.2pt }
+      table.sheet0 tr.row1 { height:50.4pt }
+      table.sheet0 tr.row2 { height:129pt }
+      table.sheet0 tr.row3 { height:144pt }
+      table.sheet0 tr.row4 { height:139.8pt }
+      table.sheet0 tr.row5 { height:142.2pt }
+      table.sheet0 tr.row6 { height:135pt }
+      table.sheet0 tr.row7 { height:126.6pt }
+      table.sheet0 tr.row8 { height:132pt }
+      table.sheet0 tr.row9 { height:139.8pt }
+      table.sheet0 tr.row10 { height:142.8pt }
+      table.sheet0 tr.row11 { height:159.6pt }
+      table.sheet0 tr.row12 { height:151.2pt }
+      table.sheet0 tr.row13 { height:152.4pt }
+      table.sheet0 tr.row14 { height:121.2pt }
+      table.sheet0 tr.row15 { height:158.4pt }
+      table.sheet0 tr.row16 { height:119.4pt }
+      table.sheet0 tr.row17 { height:136.2pt }
+      table.sheet0 tr.row18 { height:123.6pt }
+    </style>
+  </head>
+
+  <body>
+<style>
+@page { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
+body { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
+</style>
+    <table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0 gridlines">
+        <col class="col0">
+        <col class="col1">
+        <col class="col2">
+        <col class="col3">
+        <tbody>
+          <tr class="row0">
+            <td class="column0 style7 s">Microsoft Responsible AI Standard, v2</td>
+            <td class="column1 style7 null"></td>
+            <td class="column2 style4 null"></td>
+            <td class="column3 style1 null"></td>
+          </tr>
+          <tr class="row1">
+            <td class="column0 style6 s">&nbsp;Activity Group  </td>
+            <td class="column1 style6 s">Activity</td>
+            <td class="column2 style6 s">Expected Evidence</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row2">
+            <td class="column0 style8 s">Accountability Goals</td>
+            <td class="column1 style8 s">1.1 Impact assessment</td>
+            <td class="column2 style2 s">1.Documentation of AI impact assessments conducted.<br />
+2.Reports detailing the methodology, findings, and implications of the impact assessment.<br />
+3.Evidence of stakeholder engagement in the assessment process.</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row3">
+            <td class="column0 style3 s">Accountability Goals</td>
+            <td class="column1 style5 s">1.2 Oversight of significant adverse impacts</td>
+            <td class="column2 style2 s">1.Records of oversight mechanisms implemented to address significant adverse impacts.<br />
+2.Documentation of actions taken in response to identified adverse impacts.<br />
+3.Evidence of review processes and decision-making related to adverse impacts.</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row4">
+            <td class="column0 style3 s">Accountability Goals</td>
+            <td class="column1 style3 s">1.3 Fit for purpose</td>
+            <td class="column2 style2 s">1.Documentation demonstrating alignment of AI systems with intended purposes.<br />
+2.Records of evaluations assessing the effectiveness and suitability of AI systems for their intended uses.<br />
+3.Evidence of adjustments made to improve the fit-for-purpose of AI systems based on evaluations.</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row5">
+            <td class="column0 style3 s">Accountability Goals</td>
+            <td class="column1 style5 s">1.4 Data governance and management</td>
+            <td class="column2 style2 s">1.Documentation of data governance policies and procedures.<br />
+2.Records of data management practices, including data collection, storage, processing, and sharing.<br />
+3.Evidence of compliance with data protection regulations and standards.</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row6">
+            <td class="column0 style3 s">Accountability Goals</td>
+            <td class="column1 style3 s">1.5 Human oversight and control</td>
+            <td class="column2 style2 s">1.Documentation of mechanisms for human oversight of AI systems.<br />
+Records demonstrating human intervention in decision-making processes when necessary.<br />
+2.Evidence of controls implemented to ensure human control over AI systems.</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row7">
+            <td class="column0 style3 s">Transparency Goals</td>
+            <td class="column1 style5 s">2.1 System intelligibility for decision making</td>
+            <td class="column2 style2 s">1.Documentation of efforts to ensure transparency and explainability of AI systems.<br />
+2.Records of methodologies used to enhance system intelligibility.<br />
+Evidence of communication strategies for making AI decisions understandable to stakeholders.</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row8">
+            <td class="column0 style3 s">Transparency Goals</td>
+            <td class="column1 style3 s">2.2 Communication to stakeholders</td>
+            <td class="column2 style2 s">1.Records of communication strategies employed to inform stakeholders about AI systems and their impacts.<br />
+2.Documentation of stakeholder engagement activities.<br />
+3.Evidence of feedback received from stakeholders regarding transparency and communication.</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row9">
+            <td class="column0 style3 s">Transparency Goals</td>
+            <td class="column1 style5 s">2.3 Disclosure of AI interaction</td>
+            <td class="column2 style2 s">1.Documentation of policies and procedures for disclosing AI interactions.<br />
+2.Records of instances where AI interactions were disclosed to users or affected parties.<br />
+3.Evidence of transparency in disclosing AI involvement in decision-making processes.</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row10">
+            <td class="column0 style3 s">Fairness Goals</td>
+            <td class="column1 style3 s">3.1 Quality of service</td>
+            <td class="column2 style2 s">1.Documentation of measures taken to ensure fairness in the delivery of AI services.<br />
+2.Records of evaluations assessing the quality and fairness of AI services.<br />
+3.Evidence of adjustments made to improve service quality and fairness.</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row11">
+            <td class="column0 style3 s">Fairness Goals</td>
+            <td class="column1 style5 s">3.2 Allocation of resources and opportunities</td>
+            <td class="column2 style2 s">1.Documentation of policies and procedures for resource allocation and opportunity distribution.<br />
+2.Records of assessments evaluating the fairness of resource allocation and opportunity distribution.<br />
+3.Evidence of efforts to address disparities and biases in resource allocation and opportunity distribution.</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row12">
+            <td class="column0 style3 s">Fairness Goals</td>
+            <td class="column1 style5 s">3.4 Minimization of stereotyping, demeaning, and erasing outputs</td>
+            <td class="column2 style2 s">1.Documentation of strategies to minimize stereotypes, demeaning outputs, and erasure in AI systems.<br />
+2.Records of assessments identifying and addressing instances of stereotyping and demeaning outputs.<br />
+3.Evidence of ongoing efforts to improve the fairness and inclusivity of AI outputs.</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row13">
+            <td class="column0 style3 s">Reliability &amp; Safety Goals</td>
+            <td class="column1 style5 s">4.1 Reliability and safety guidance</td>
+            <td class="column2 style2 s">1.Documentation of guidelines and standards followed to ensure the reliability and safety of AI systems.<br />
+2.Records of risk assessments and mitigation strategies implemented to address reliability and safety concerns.<br />
+3.Evidence of adherence to industry best practices for reliability and safety.</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row14">
+            <td class="column0 style3 s">Reliability &amp; Safety Goals</td>
+            <td class="column1 style5 s">4.2 Failures and remediations</td>
+            <td class="column2 style2 s">1.Records of AI system failures and incidents.<br />
+2.Documentation of remediation actions taken to address failures and mitigate their impacts.<br />
+3.Evidence of lessons learned and improvements made to prevent similar failures in the future.</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row15">
+            <td class="column0 style3 s">Reliability &amp; Safety Goals</td>
+            <td class="column1 style5 s">4.3 Ongoing monitoring, feedback, and evaluation</td>
+            <td class="column2 style2 s">1.Documentation of processes for ongoing monitoring, feedback collection, and evaluation of AI systems.<br />
+2.Records of monitoring activities, feedback received, and evaluation results.<br />
+3.Evidence of continuous improvement efforts based on monitoring and evaluation findings.</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row16">
+            <td class="column0 style3 s">Privacy &amp; Security Goals</td>
+            <td class="column1 style5 s">5.1 Privacy Standard compliance</td>
+            <td class="column2 style2 s">1.Documentation demonstrating compliance with privacy standards and regulations.<br />
+2.Records of privacy assessments and audits conducted.<br />
+3.Evidence of measures implemented to protect user privacy in AI systems.</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row17">
+            <td class="column0 style3 s">Privacy &amp; Security Goals</td>
+            <td class="column1 style5 s">5.2 Security Policy compliance</td>
+            <td class="column2 style2 s">1.Documentation of compliance with security policies and standards.<br />
+2.Records of security assessments and audits performed.<br />
+3.Evidence of security controls implemented to safeguard AI systems against threats and breaches.</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row18">
+            <td class="column0 style3 s">Inclusiveness Goal</td>
+            <td class="column1 style5 s">6.1 Accessibility Standards compliance</td>
+            <td class="column2 style2 s">1.Documentation of compliance with accessibility standards and guidelines.<br />
+2.Records of accessibility assessments conducted.<br />
+Evidence of efforts to ensure AI 3.systems are accessible to users with diverse abilities and needs.<br />
+<br />
+<br />
+<br />
+</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+        </tbody>
+    </table>
+  </body>
+</html>
